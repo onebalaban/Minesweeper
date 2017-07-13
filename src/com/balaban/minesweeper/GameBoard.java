@@ -1,12 +1,18 @@
 package com.balaban.minesweeper;
 
 /**
- * Created by Roman Balaban on 10.07.2017.
+ * The class initializes game board and bombs positions
  */
 public class GameBoard {
 
-
-    public void play(int rows, int columns, int numOfMines) {
+    /**
+     * initialize game board and bombs positions
+     *
+     * @param rows       number of rows at the board
+     * @param columns    number of columns at the board
+     * @param numOfMines number of mines at hte board
+     */
+    public void initialize(int rows, int columns, int numOfMines) {
 
         //make 2D array
         BoardCell[][] board = new BoardCell[rows][columns];
@@ -43,7 +49,6 @@ public class GameBoard {
                                     board[i][j].setNumOfMinesAround(board[i][j].getNumOfMinesAround() + 1);
                                 }
                             } catch (Exception e) {
-                                continue;
                             }
                         }
 
@@ -58,12 +63,8 @@ public class GameBoard {
         //initialize game logic engine and pass the board
         GameLogic gameLogic = new GameLogic(board);
         gameLogic.play();
-//
-//        while (!gameLogic.getFailState()){
-//            gameLogic.play();
-//        }
-//
-//        System.out.println("Game over");
+
     }
+
 
 }

@@ -1,7 +1,7 @@
 package com.balaban.minesweeper;
 
 /**
- * Created by Roman Balaban on 10.07.2017.
+ * The class for game launch and setup game preferences
  */
 public class Launcher {
 
@@ -11,6 +11,6 @@ public class Launcher {
 
     public static void main(String[] args) {
         GameBoard gameBoard = new GameBoard();
-        gameBoard.play(rows,columns,numOfMines);
+        gameBoard.initialize(rows, columns, numOfMines);
     }
 }

@@ -1,15 +1,28 @@
 package com.balaban.minesweeper;
 
 /**
- * Created by Roman Balaban on 12.07.2017.
+ * The interface UiDrawer is needed to define methods to draw user interface and alerts
  */
 public interface UiDrawer {
 
-    public void drawBoard();
+    /**
+     * Draw game board
+     */
+    void drawBoard();
 
-    public void drawFinalBoard();
+    /**
+     * Draw game board after game over or win
+     */
+    void drawFinalBoard();
 
-    public void loseAlert();
+    /**
+     * Display alert when game is over
+     */
+    void loseAlert();
 
-    public void winAlert();
+    /**
+     * Display alert in case of win
+     */
+    void winAlert();
+
 }

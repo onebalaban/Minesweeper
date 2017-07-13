@@ -1,7 +1,8 @@
 package com.balaban.minesweeper;
 
 /**
- * Created by Roman Balaban on 10.07.2017.
+ * The class contains variables needed to describe each cell on a gameboard. Cell states are opened/closed,
+ * flagged-unflagged, mined/not mined. Also each cell has a quantity of cell with mines around.
  */
 public class BoardCell {
 

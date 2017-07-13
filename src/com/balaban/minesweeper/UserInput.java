@@ -3,10 +3,15 @@ package com.balaban.minesweeper;
 import java.util.ArrayList;
 
 /**
- * Created by Roman Balaban on 12.07.2017.
+ * The interface UserInput is needed to define ways of user input
  */
 public interface UserInput {
 
-    public ArrayList getTargetCell(); //return array list with row cell position, column cell position and input mode - click or flag
+    /**
+     * Get coordinates of the target cell from user, also get flag set/unset status
+     *
+     * @return array list with row cell position, column cell position and input mode - click or flag
+     */
+    ArrayList getTargetCell();
 
 }
