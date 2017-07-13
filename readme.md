@@ -9,4 +9,4 @@ At this moment all needed options are built into the launcher.
 Roman Balaban, 2017
 
 ## License
-The project has been released under the [MIT License][license].
+The project has been released under the MIT license.
